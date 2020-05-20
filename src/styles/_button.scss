@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./functions";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+
+button {
+  cursor: pointer;
+  border: solid $black 1px;
+  background-color: transparent;
+  font-family: "Playfair Display", serif;
+  font-size: px-to-rem(20px);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 25px 10px 25px;
+  &.no-style {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+}

@@ -1,0 +1,37 @@
+@import "../index.scss";
+.shop {
+  width: 75%;
+  .item {
+    display: flex;
+    margin-bottom: px-to-rem(80px);
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .item-image {
+      width: px-to-rem(150px);
+      overflow: hidden;
+    }
+
+    .item-description {
+      .item-title {
+        font-style: italic;
+        font-size: px-to-rem(30px);
+      }
+      @include breakpoint(tablet) {
+        width: 30%;
+      }
+    }
+
+    .item-price {
+      text-align: end;
+      font-size: px-to-rem(30px);
+      @include breakpoint(mobile) {
+        text-align: center;
+      }
+    }
+  }
+}
